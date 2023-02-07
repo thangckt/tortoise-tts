@@ -64,6 +64,7 @@ Next, install TorToiSe and it's dependencies:
 ```shell
 git clone https://github.com/neonbjb/tortoise-tts.git
 cd tortoise-tts
+python -m pip install -r ./requirements.txt
 python setup.py install
 ```
 
@@ -120,7 +121,7 @@ For the those in the ML space: this is created by projecting a random vector ont
 
 This repo comes with several pre-packaged voices. Voices prepended with "train_" came from the training set and perform
 far better than the others. If your goal is high quality speech, I recommend you pick one of them. If you want to see
-what Tortoise can do for zero-shot mimicing, take a look at the others.
+what Tortoise can do for zero-shot mimicking, take a look at the others.
 
 ### Adding a new voice
 
@@ -271,6 +272,7 @@ credit a few of the amazing folks in the community that have helped make this ha
 - [Ramesh et al](https://arxiv.org/pdf/2102.12092.pdf) who authored the DALLE paper, which is the inspiration behind Tortoise.
 - [Nichol and Dhariwal](https://arxiv.org/pdf/2102.09672.pdf) who authored the (revision of) the code that drives the diffusion model.
 - [Jang et al](https://arxiv.org/pdf/2106.07889.pdf) who developed and open-sourced univnet, the vocoder this repo uses.
+- [Kim and Jung](https://github.com/mindslab-ai/univnet) who implemented univnet pytorch model.
 - [lucidrains](https://github.com/lucidrains) who writes awesome open source pytorch models, many of which are used here.
 - [Patrick von Platen](https://huggingface.co/patrickvonplaten) whose guides on setting up wav2vec were invaluable to building my dataset.
 
